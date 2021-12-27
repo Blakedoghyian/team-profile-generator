@@ -1,0 +1,28 @@
+{
+  "devDependencies": {
+    "jest": "^27.4.5"
+  },
+  "dependencies": {
+    "inquirer": "^8.2.0"
+  },
+  "name": "-y",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Blakedoghyian/team-profile-generator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Blakedoghyian/team-profile-generator/issues"
+  },
+  "homepage": "https://github.com/Blakedoghyian/team-profile-generator#readme",
+  "description": ""
+}
