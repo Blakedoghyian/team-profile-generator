@@ -7,14 +7,16 @@ const Employee = require('../lib/employee');
 const newEmployee = new Employee('Dave', 1230, 'dave@emailtest.com', Employee)
 
 describe("Employee", () => {
-    it("employee has name", () => {
+    test("employee has name", () => {
+        // name input must have string value
         expect(newEmployee.name).toEqual(expect.any(String))
+        // name input must be longer than 2
         expect(newEmployee.name.length).toBeGreaterThan(2)
     })
-    it("employee has id that must be number", () =>{
+    test("employee has id that must be number", () =>{
         expect(newEmployee.id).toEqual(expect.any(Number))
     })
-    it("employee has email address, must contain '@' ", () => {
+    test("employee has email address, must contain '@' ", () => {
         expect(newEmployee.email).toEqual(expect.stringContaining('@'))
     })
 });
