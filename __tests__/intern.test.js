@@ -6,7 +6,7 @@ const Intern = require('../lib/Intern');
 // test Intern object with the following properties
 // name, id, email, school, getName(), getId(), getEmail(), getSchool(), getRole()
 
-const newIntern = new Intern('Dave', 1025, 'dave@internemail.com');
+const newIntern = new Intern('Dave', 1025, 'dave@internemail.com', Intern);
 
 describe("Intern", () => {
     test("Intern has a name input", () => {
@@ -20,5 +20,8 @@ describe("Intern", () => {
     })
     test("Intern has email address, must contain '@' ", () => {
         expect(newIntern.email).toEqual(expect.stringContaining('@'))
+    })
+    test("Intern has input a school", () => {
+        expect(newIntern.school).toEqual(expect.any(String))
     })
 });

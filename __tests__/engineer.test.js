@@ -20,4 +20,7 @@ describe("Engineer", () => {
     test("engineer has an email address, must contain'@' ", () => {
         expect(newEngineer.email).toEqual(expect.stringContaining('@'))
     })
+    test("engineer input a github", () => {
+        expect(newEngineer.github.length).toBeGreaterThan(2)
+    })
 });

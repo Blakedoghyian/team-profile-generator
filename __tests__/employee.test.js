@@ -4,7 +4,7 @@
 // require employee library for importing 
 const { expect, it } = require('@jest/globals');
 const Employee = require('../lib/employee');
-const newEmployee = new Employee('Dave', 1230, 'dave@emailtest.com', Employee)
+const newEmployee = new Employee('Dave', 1230, 'dave@emailtest.com')
 
 describe("Employee", () => {
     test("employee has name", () => {
